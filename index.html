@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css" />
     <title>monPortfolio</title>
   </head>
   <body>
     <div class="container">
+
+        <!-- gestion de la navbar du responsive  -->
+
+      <div class="navbar">
+        <a class="icon">&#9776;</a>
+        <h1>simon doe</h1>
+      </div>
+
+        <!-- début de la sidebar -->
       <div class="sidebar">
         <div class="contain">
           <h2>simon doe</h2>
@@ -33,12 +36,12 @@
 
           <ul class="menu">
             <li><a href="index.html"><i class="fa-solid fa-laptop"></i> about me</a></li>
-            <li><a href=""><i class="fa-solid fa-laptop"></i> portfolio</a></li>
-            <li><a href=""><i class="fa-solid fa-laptop"></i> service et pricing</a></li>
-            <li><a href=""><i class="fa-solid fa-laptop"></i> resume</a></li>
-            <li><a href=""><i class="fa-solid fa-laptop"></i> blog</a></li>
-            <li><a href=""><i class="fa-solid fa-laptop"></i> contact</a></li>
-            <li><a href=""><i class="fa-solid fa-laptop"></i> more pages</a>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> portfolio</a></li>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> service et pricing</a></li>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> resume</a></li>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> blog</a></li>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> contact</a></li>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> more pages</a>
                 <select name="" id="">
                     <option value=""><a href="">project pages</a></option>
                     <option value=""><a href="">blog home 1</a></option>
@@ -48,11 +51,13 @@
             </li>
           </ul>
         </div>
-        <button class="btnSide">hire me</button>
-
-        
+        <button class="btnSide"><a href="">hire me</a></button>
       </div>
+
+       <!-- fin de la sidebar -->
+
       <div class="page">
+         <!-- début du hero -->
         <div class="propos">
           <div class="nom">
             <h1 id="h1">simon doe</h1>
@@ -67,14 +72,19 @@
               >.
             </p>
             <div class="btn">
-              <input type="button" value="view portfolio" class="btn1" />
-              <input type="button" value="view resume" class="btn2" />
+              <button class="btn1"><a href="#">view portfolio</a></button>
+              <button class="btn2"><a href="#">view resume</a></button>
+              <!-- <input type="submit" value="view portfolio" class="btn1" />
+              <input type="submit" value="view resume" class="btn2" /> -->
             </div>
           </div>
           <div class="img">
             <img src="../profile-lg.jpg" alt="" id="img" />
           </div>
         </div>
+        <!-- fin du hero -->
+
+        <!-- début de la partie 'what i do' -->
         <div class="domaine">
           <div class="info">
             <h1 class="titre">what i do</h1>
@@ -213,10 +223,13 @@
           </div>
 
           <div class="btn3">
-            <input type="button" value="services & pricing" id="btn3" />
+            <button id="btn3"><a href="">services & pricing</a></button>
           </div>
         </div>
+        <!-- fin de la partie 'what i do' -->
       </div>
+
+     
     </div>
   </body>
 </html>

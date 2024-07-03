@@ -15,6 +15,7 @@
     border: none;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 .container{
@@ -96,12 +97,13 @@
     background-color: var(--green-opac);
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+.btnSide a{
     color: var(--blanc);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .btnSide:hover{
     background-color: var(--green);
@@ -169,11 +171,6 @@
 }
 .btn1{
     background-color: var(--vert);
-    color:var(--blanc) ;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 15px;
     padding: 10px;
     border-radius: 10px;
     margin-right: 19px;
@@ -181,13 +178,15 @@
 }
 .btn2{
     background-color: var(--noir-clair);
-    color:var(--blanc) ;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn1 a, .btn2 a{
+    color: var(--blanc);
     font-weight: bold;
     text-transform: capitalize;
     font-size: 15px;
-    padding: 10px;
-    border-radius: 10px;
+
 }
 
 span a{
@@ -204,7 +203,7 @@ span a:hover{
     display: flex;
     flex-direction: column;
     background-color: var(--blanc);
-    padding: 48px;
+    padding: 50px;
 }
 
 .info{
@@ -226,14 +225,15 @@ span a:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     padding-top: 15px;
+    margin-bottom: 60px;
 }
 
 .lang{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
-    padding: 30px 0px;
+    width: 100%;
+   
 
 }
 .L1{
@@ -241,7 +241,7 @@ span a:hover{
     flex-direction: column;
     width: 21%;
     height: auto;
-    padding: 20px 30px 20px 0px;
+    padding: 20px 20px 20px 0px;
 }
 h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -273,11 +273,164 @@ h4{
 }
 #btn3{
     background-color: var(--vert);
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn3 a{
     color: var(--blanc);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     text-transform: capitalize;
     font-size: 15px;
-    padding: 10px;
-    border-radius: 10px;
+}
+
+/* gestion du responsive */
+
+@media screen and (max-width:1199.50px) {
+    /* modification de la taille de l'image */
+    #img{
+        width: 250px;  
+        padding: 0px 10px; 
+    }
+    .nom{
+        width: 60%;
+    }
+}
+/* application des styles à la navbar, icon pour le responsive */
+.navbar{
+    display: none;
+    position: relative;
+    height: 70px;
+    padding: 20px;
+}
+.navbar h1{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-transform: capitalize;
+    font-size: 23px;
+    color: var(--blanc);
+}
+.icon{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 4px 10px;
+    
+}
+.icon:hover{
+    cursor: pointer;
+    color: var(--blanc);
+    border-color: var(--blanc);
+}
+/* responsive selon la taille 9991.50 */
+@media screen and (max-width:991.50px) {
+    /* insertion de la navbar*/
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--vert);
+        
+    }
+    .page{
+         /* overflow: hidden;  */
+        width: 100%;
+         /* overflow-y:scroll ;  */
+        
+    }
+    .propos{
+        padding: 35px 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nom{
+        width: 40%;
+        height: auto;
+
+    }
+    
+    .img{
+       display: inline-block;
+       width: 50%;
+    }
+    #img{
+        width: 300px;  
+        padding: 0px 10px; 
+    }
+    .nom{
+        width: 60%;
+    }
+   
+    .info {
+        width: 70%;
+        padding-left:42px ;
+    }
+    .lang{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .L1{
+        width: 40%;
+        height: auto;
+        padding: 0px 32px;
+        margin-bottom: 30px;
+    }
+}
+/* gestion du responsive à la taille 767.50px */
+@media screen and (max-width:767.50px){
+   .propos{
+        display: flex;
+        flex-direction: column;
+   }
+   .btn{
+    margin-bottom: 40px;
+   }
+
+}
+
+/* gestion du responsive à la taille 727.50px */
+@media screen and (max-width:727px){
+    .propos{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 20px;
+    }
+    .nom{
+        width: 85%;
+    }
+    .L1{
+        width: 42%;
+        height: auto;
+        padding: 0px 15px;
+        margin-bottom: 30px;
+    }
+    .info {
+       
+        width: 90%;
+        padding-left:20px ;
+    }
+    .domaine{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--blanc);
+        padding: 10px;
+    }
+    .lang{
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+    }
 }
